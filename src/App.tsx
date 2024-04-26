@@ -14,13 +14,9 @@ const App = () => {
       </GridItem>
       <Show above="lg">
         {/*what we put inside appears on lg screen and above */}
-        <GridItem area="aside" bg="gold">
-          Aside
-        </GridItem>
+        <GridItem area="aside">Aside</GridItem>
       </Show>
-      <GridItem area="main" bg="dodgerblue">
-        Main
-      </GridItem>
+      <GridItem area="main">Main</GridItem>
     </Grid>
   );
 };
