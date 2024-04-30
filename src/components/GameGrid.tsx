@@ -8,9 +8,14 @@ import { Genre } from "../hooks/useGenres";
 interface Props {
   selectedGenre: Genre | null;
   selectedPlatform: Platform | null;
+  sortOrder: string;
 }
-const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
-  const { error, data, isLoading } = useGames(selectedGenre, selectedPlatform);
+const GameGrid = ({ selectedGenre, selectedPlatform, sortOrder }: Props) => {
+  const { error, data, isLoading } = useGames(
+    selectedGenre,
+    selectedPlatform,
+    sortOrder
+  );
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
     <>
