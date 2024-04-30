@@ -25,7 +25,10 @@ const App = () => {
       <Show above="lg">
         {/*what we put inside appears on lg screen and above */}
         <GridItem area="aside" paddingX="5px">
-          <GenreList onSelectGenre={(genre) => setSelectedGenre(genre)} />
+          <GenreList
+            selectedGenre={selectedGenre}
+            onSelectedGenre={(genre) => setSelectedGenre(genre)}
+          />
         </GridItem>
       </Show>
       <GridItem area="main">
