@@ -7,6 +7,9 @@ import "./index.css";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { RouterProvider } from "react-router-dom";
 import router from "./routes";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 const queryClient = new QueryClient();
 
